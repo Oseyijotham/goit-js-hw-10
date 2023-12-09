@@ -90,8 +90,9 @@ fetchBreeds().then(
                          </div>
                                    `;
                         })
-                            console.log("data:"+data)
+                            
                             .join("");
+                        console.log("data:" + data)
                         innerContr.insertAdjacentHTML("beforeend", data);
                         //loaderMsg.classList.add('hide');
                         Notiflix.Loading.remove();
