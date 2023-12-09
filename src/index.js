@@ -78,6 +78,8 @@ fetchBreeds().then(
                     
 
                     .then((ans) => {
+                        //ans is an array with an object(we called "cat") inside it
+                        console.log("ans:"+ans)
                         const data = ans.map((cat) => {
                             return `
                          <div style="padding-right:20px"><img src="${cat.url}" alt="Picture of Cat" width="300px" ></div>
@@ -88,6 +90,7 @@ fetchBreeds().then(
                          </div>
                                    `;
                         })
+                            console.log("data:"+data)
                             .join("");
                         innerContr.insertAdjacentHTML("beforeend", data);
                         //loaderMsg.classList.add('hide');
